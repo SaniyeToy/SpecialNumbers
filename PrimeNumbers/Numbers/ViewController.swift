@@ -23,21 +23,19 @@ class ViewController: UIViewController {
             
             for a in 2...i-1 where i % 2 == 1{
                 if i % a == 0{
-                 //   print("asal değil")
+                    //  print("asal değil")
                     if prime.contains(i){
                         prime.removeLast()
                     }
                     break
                 } else{
-                    if prime.contains(i){
-                        
-                    }else{
+                    if !prime.contains(i){
                         prime.append(i)
                     }
                 }
             }
         }
-       // print(prime)
+        print(prime)
     }
     
     
